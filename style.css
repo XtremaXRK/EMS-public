@@ -1,24 +1,32 @@
 *{
-	margin: 5px;
-	padding: 0;
-}
-body{
-    font-family: sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #dee1ec;
 }
 
 .wrapper{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg.jpeg);
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/IIITDMJ.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-repeat: no-repeat;
     min-height: 30rem;
 }
-.main{
-    max-width: 1200px;
-    height: auto;
-    margin: 0 auto;
+
+#navbar-right{
+    display: inline-block;
+    height: 40px;
+    width: calc(100% - 40px);
+    text-align: right;
+    color: bisque;
+}
+
+#navbar-right li a{
+    color: bisque;
 }
 
 nav{
@@ -42,6 +50,7 @@ nav ul li a{
     text-decoration: none;
     color: white;
     padding: 20px;
+    transition: 0.3s ease;
 }
 
 img{
@@ -54,7 +63,8 @@ nav ul li:hover{
     background-color: thistle;
     color: #000;
     font-weight: bold;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
+    transform: scale(1.1);
 }
 
 .section{
@@ -91,9 +101,17 @@ nav ul li:hover{
     margin-right: 2rem;
     font-size: 1.2rem;
     opacity: 0.7;
+    border-radius: 10px;
+    transition: 0.3s ease;
 }
 
-showcase h1{
+.features button:hover{
+    transform: scale(1.1) ;
+    background-color: rgb(43, 43, 43);
+    color: blanchedalmond;
+}
+
+.showcase h1{
     margin-top: 5%;
     margin-bottom: 5%;
     text-align: center;
@@ -112,12 +130,99 @@ showcase h1{
     margin: auto;
 }
 
+#brand-logo{
+    width: 30px;
+    /* margin: 10px; */
+}
+
+.btn{
+    color: white;
+    background-color: #22d1ee;  
+    border-radius: 3px;
+    padding: 10px 30px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    margin-right: 5px;
+    line-height: 20px;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 0px;
+    transition: 0.3s ease;
+}
+
+.btn:hover{
+    background-color: #272727;
+    color: antiquewhite;
+}
+
+.slider{
+    width: 85%;
+    height: 90vh;
+    background-image: url(Images/1.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.slider .title{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    left: 10%;
+}
+
+.slider .title h1{
+    font-size: 57px;
+    color: white;
+    line-height: 65px;
+}
+
+.slider .title h1 span{
+    color: #22d1ee !important;
+}
+
+.slider .title h2{
+    color: whitesmoke;
+    font-size: 40px;
+    padding: 30px;
+    padding-bottom: 5px;
+}
+
+.slider .title P{
+    font-size: 20px;
+    color: whitesmoke;
+    padding-left: 35px;
+}
+
+.slider .title .btn{
+    color: white;
+    background-color:#22d1ee;  
+    border-radius: 3px;
+    padding: 16px 36px;
+    text-align: center;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    margin-right: 10px;
+    line-height: 20px;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 35px;
+    transition: 0.3s ease;
+}
+
+.slider .title .btn:hover{
+    background-color: #272727;
+}
+
 .header{
-    color: purple;
+    color: #22d1ee;
     text-align: center;
     margin: 50px;
     font-size: 30px;
-    background: cornsilk;
 }
 
 .flex-container{
@@ -126,17 +231,18 @@ clear: both;
 float: inline-start;
 }
 
-.main .flex-container .flex-item{
-width: 30%;
-display: inline-block;
-text-align: center;
-margin-left: 30px;
-border: grey 1px solid;
-border-radius: 10px;
-padding: 15px;
-background-color: white;
-color: grey;
-transition: 0.5s;
+.flex-item{
+    width: 400px;
+    display: inline-block;
+    text-align: center;
+    margin: 1.6%;
+    vertical-align: middle;
+    border: grey 1px solid;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #303a52;
+    color: rgb(238, 234, 234);
+    transition: 0.5s;
 }
 
 .main .flex-container .flex-item:hover{
@@ -152,18 +258,9 @@ transition: 0.5s;
 .main .flex-container .flex-item p{
     width: 180px;
     text-align: center;
-    margin-left: 70px;
-    color: grey;
+    margin: auto;
+    color: rgb(238, 234, 234);
     font-size: 15px;
-}
-
-.apply{
-    margin-top: 4%;
-    background-color: orangered;
-    padding: 0.7rem 1rem;
-    color: #fff;
-    border: none;
-    border-radius: 10px;
 }
 
 footer{
