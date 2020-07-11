@@ -61,10 +61,10 @@ img{
 
 nav ul li:hover{
     background-color: thistle;
-    color: #000;
+    color: black;
     font-weight: bold;
-    /* font-size: 1.2rem; */
-    transform: scale(1.1);
+    transform: scale(1.15);
+    border-radius: 4px;
 }
 
 .section{
@@ -83,6 +83,11 @@ nav ul li:hover{
     color: gray;
 }
 
+.camel{
+    color: #44b0d1;
+    
+}
+
 .btn-1{
     background-color: orangered;
     padding: 0.7rem 1rem;
@@ -92,6 +97,8 @@ nav ul li:hover{
 }
 
 .features{
+    position: absolute;
+    top: 250px;
     margin-top: 4%;
     margin-bottom: 2%;
 }
@@ -107,7 +114,7 @@ nav ul li:hover{
 
 .features button:hover{
     transform: scale(1.1) ;
-    background-color: rgb(43, 43, 43);
+    background-color: #44b0d1;
     color: blanchedalmond;
 }
 
@@ -219,10 +226,11 @@ nav ul li:hover{
 }
 
 .header{
-    color: #22d1ee;
+    color: #44b0d1;
     text-align: center;
     margin: 50px;
-    font-size: 30px;
+    font-size: 50px;
+    font-weight: 700;
 }
 
 .flex-container{
@@ -233,6 +241,7 @@ float: inline-start;
 
 .flex-item{
     width: 400px;
+    height: 200px;
     display: inline-block;
     text-align: center;
     margin: 1.6%;
@@ -243,6 +252,14 @@ float: inline-start;
     background-color: #303a52;
     color: rgb(238, 234, 234);
     transition: 0.5s;
+}
+
+.flex-item img{
+    padding-top: 12px;
+}
+
+#big-item{
+    padding-top: 9px;
 }
 
 .main .flex-container .flex-item:hover{
