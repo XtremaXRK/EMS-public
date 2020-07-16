@@ -253,7 +253,7 @@ float: inline-start;
     border: grey 4px solid;
     border-radius: 10px;
     padding: 15px;
-    background-color: white;
+    background-color: gainsboro;
     color: black;
     transition: 0.5s;
 }
