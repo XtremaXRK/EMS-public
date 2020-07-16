@@ -6,7 +6,10 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: #dee1ec;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0,0,0,0.9);
+    opacity: 0.8;
 }
 
 .wrapper{
@@ -22,11 +25,11 @@ body{
     height: 40px;
     width: calc(100% - 40px);
     text-align: right;
-    color: bisque;
+    color: black;
 }
 
 #navbar-right li a{
-    color: bisque;
+    color: black;
 }
 
 nav{
@@ -60,7 +63,7 @@ img{
 }
 
 nav ul li:hover{
-    background-color: thistle;
+    background-color: lightsalmon;
     color: black;
     font-weight: bold;
     transform: scale(1.15);
@@ -84,12 +87,12 @@ nav ul li:hover{
 }
 
 .camel{
-    color: #44b0d1;
+    color: coral;
     
 }
 
 .btn-1{
-    background-color: orangered;
+    background-color: coral;
     padding: 0.7rem 1rem;
     color: #fff;
     border: none;
@@ -114,7 +117,7 @@ nav ul li:hover{
 
 .features button:hover{
     transform: scale(1.1) ;
-    background-color: #44b0d1;
+    background-color: coral;
     color: blanchedalmond;
 }
 
@@ -188,7 +191,7 @@ nav ul li:hover{
 }
 
 .slider .title h1 span{
-    color: #22d1ee !important;
+    color: tomato; !important;
 }
 
 .slider .title h2{
@@ -226,11 +229,11 @@ nav ul li:hover{
 }
 
 .header{
-    color: #44b0d1;
+    color: black;
     text-align: center;
     margin: 50px;
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 30px;
+    background: linear-gradient(rosybrown,grey);
 }
 
 .flex-container{
@@ -245,12 +248,13 @@ float: inline-start;
     display: inline-block;
     text-align: center;
     margin: 1.6%;
+    margin-left: 60px;
     vertical-align: middle;
-    border: grey 1px solid;
+    border: grey 4px solid;
     border-radius: 10px;
     padding: 15px;
-    background-color: #303a52;
-    color: rgb(238, 234, 234);
+    background-color: white;
+    color: black;
     transition: 0.5s;
 }
 
@@ -275,8 +279,8 @@ float: inline-start;
 .main .flex-container .flex-item p{
     width: 180px;
     text-align: center;
-    margin: auto;
-    color: rgb(238, 234, 234);
+    margin-left: 30px;
+    color: darkgrey;
     font-size: 15px;
 }
 
